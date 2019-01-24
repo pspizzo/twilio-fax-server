@@ -73,7 +73,7 @@ Once you have your start.sh file ready, launch your server:
 
 
 ### Test your server!
-Now you should be able to connect to your local web server: https://<your-ip-address>
+Now you should be able to connect to your local web server: https://(your-ip-address)
 
 
 ### Configure POP3
