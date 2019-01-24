@@ -1,0 +1,14 @@
+{
+  "mailDir": "",
+  "faxStorageDir": "tmp-faxes",
+  "publicHostname": "",
+  "inboundAuth": {
+    "user": "",
+    "pass": ""
+  },
+  "twilio": {
+    "sid": "",
+    "token": "",
+    "number": ""
+  }
+}

@@ -1,0 +1,20 @@
+.default-layout {
+  nav.nav {
+    background-color: #322;
+    border-bottom: 2px solid #633;
+
+    .nav-spacer {
+      flex-grow: 1;
+    }
+
+    .nav-link {
+      font-size: 1.2em;
+      color: #fff;
+
+      &:hover, &:focus {
+        color: #fcc;
+      }
+    }
+  }
+
+}

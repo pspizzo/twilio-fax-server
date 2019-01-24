@@ -1,0 +1,13 @@
+{
+  "mailDir": "MAILDIR_ROOT_DIR",
+  "publicHostname": "PUBLIC_HOSTNAME",
+  "inboundAuth": {
+    "user": "INBOUND_AUTH_USER",
+    "pass": "INBOUND_AUTH_PASS"
+  },
+  "twilio": {
+    "sid": "TWILIO_SID",
+    "token": "TWILIO_TOKEN",
+    "number": "TWILIO_FAX_NUMBER"
+  }
+}

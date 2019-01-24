@@ -1,0 +1,7 @@
+.idea
+node_modules
+start.sh
+config/web-logins.json
+certificate.pem
+privateKey.pem
+send-fax/dist

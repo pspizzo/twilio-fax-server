@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export MAILDIR_ROOT_DIR=
+export PUBLIC_HOSTNAME=
+export TWILIO_SID=
+export TWILIO_TOKEN=
+export TWILIO_FAX_NUMBER=
+
+# Additional tasks before starting the app:
+# * Create a config/web-logins.json file (see config/web-logins.json.example)
+
+# Optional, but recommended
+export INBOUND_AUTH_USER=
+export INBOUND_AUTH_PASS=
+
+node app.js
