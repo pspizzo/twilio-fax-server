@@ -20,6 +20,9 @@ function checkFaxStatus(faxSid, numFailures = 0) {
             return response.json();
         }).then((json) => {
             console.log('Fax status: ' + json.status);
+            if (json.pages !== undefined) {
+                document.querySelector('[data-fax="pages"]').textContent = json.pages;
+            }
             if (status.success.includes(json.status)) {
                 document.querySelector('[data-fax="status"]').textContent = `Success (${json.status})`;
                 document.querySelector('[data-fax="result"]').innerHTML =
@@ -29,8 +32,8 @@ function checkFaxStatus(faxSid, numFailures = 0) {
                 document.querySelector('[data-fax="result"]').innerHTML =
                     '<span class="oi fax-status-error" data-glyph="warning" title="Failed" aria-hidden="true"></span>';
             } else {
-                const displayStatus = (status.pending.contains(json.status) ? json.status : 'unknown');
-                document.querySelector('[data-fax="status"]').textContent `Pending (${displayStatus})`;
+                const displayStatus = (status.pending.includes(json.status) ? json.status : 'unknown');
+                document.querySelector('[data-fax="status"]').textContent = `Pending (${displayStatus})`;
                 checkFaxStatus(faxSid);
             }
 

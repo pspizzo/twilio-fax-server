@@ -61,7 +61,11 @@ module.exports = (props) => {
                 <table className="table table-dark table-borderless fax-status">
                     <tr><td className="row-title">Fax to:</td><td className="row-value">{fax.to}</td><td className="row-icon">&nbsp;</td></tr>
                     <tr><td className="row-title">Date sent:</td><td className="row-value">{date}</td><td className="row-icon">&nbsp;</td></tr>
-                    <tr><td className="row-title">Pages:</td><td className="row-value">{fax.numPages || fax.num_pages || 'Unknown'}</td><td className="row-icon">&nbsp;</td></tr>
+                     <tr>
+                        <td className="row-title">Pages:</td>
+                        <td className="row-value" data-fax="pages">{fax.numPages || fax.num_pages || 'Unknown'}</td>
+                        <td className="row-icon">&nbsp;</td>
+                    </tr>
                     <tr>
                         <td className="row-title">Status:</td>
                         <td className="row-value" data-fax="status">{result}</td>
