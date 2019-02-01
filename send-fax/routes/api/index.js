@@ -37,7 +37,7 @@ router.get('/fax/:sid', auth.api, (req, res) => {
 
     twilioClient.fax.faxes(req.params.sid).fetch()
         .then((fax) => {
-            res.json({ status: fax.status });
+            res.json({ status: fax.status, pages: fax.numPages || fax.num_pages });
         }).catch((err) => {
             switch(err.status) {
                 case 404:
