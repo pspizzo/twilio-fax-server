@@ -66,7 +66,11 @@ router.get('/fax/sending/:file', auth, (req, res) => {
             res.end();
         } else {
             logger.info(`(sending): Deleting finished outbound fax file: ${req.params.file}`);
-            fs.unlinkSync(osFile);
+            try {
+                fs.unlinkSync(osFile);
+            } catch (e) {
+                logger.error(`(sending): Failed to delete outbound fax file: ${req.params.file}`, e);
+            }
         }
     });
 });
