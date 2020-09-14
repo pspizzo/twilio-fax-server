@@ -1,5 +1,4 @@
 
-const fetch = require('isomorphic-fetch');
 const checkPeriod = 20000; // 20 seconds
 const maxFailureRetries = 3;
 
