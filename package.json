@@ -18,7 +18,7 @@
     "express-react-views": "^0.11.0",
     "express-session": "^1.15.6",
     "memorystore": "^1.6.0",
-    "moment": "^2.23.0",
+    "moment": "^2.29.2",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
     "open-iconic": "^1.1.1",
