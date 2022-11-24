@@ -1,3 +1,5 @@
+NOTE: Twilio no longer provides the Fax API service, so this project is no longer supported.
+
 # Twilio Fax Server
 NodeJS fax server using Twilio for sending and receiving faxes digitally. No fax machine required! Tested on a Raspberry Pi 3.
 
